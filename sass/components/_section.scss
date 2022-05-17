@@ -1,0 +1,20 @@
+.section {
+  padding: 94px 0;
+
+  &--nopt {
+    padding-top: 0;
+  }
+
+  &--otherbg {
+    background-color: var(--secondary-bg-color);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+  }
+}

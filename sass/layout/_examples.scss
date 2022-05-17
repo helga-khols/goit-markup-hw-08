@@ -1,0 +1,31 @@
+.examples {
+  display: flex;
+  justify-content: space-between;
+}
+.examples__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.examples__title {
+  margin-bottom: 50px;
+}
+.examples__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  position: absolute;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.examples__wrap {
+  position: relative;
+}
