@@ -1,8 +1,23 @@
-.filter-buttons {
-  justify-content: center;
-  display: flex;
-}
 .filter {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (mix-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -26,9 +41,22 @@
   }
 }
 
-.filter-item {
+.filter__item {
   margin-right: 8px;
+
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-last-child(3n) {
+      margin-right: 0;
+    }
   }
 }
