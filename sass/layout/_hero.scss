@@ -6,17 +6,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--main-bg-color);
     margin-bottom: 30px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   &__button {
     display: flex;
