@@ -1,13 +1,19 @@
 .advantage {
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
+    grid-gap: 0;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 }
@@ -53,8 +59,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    max-width: 354px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
